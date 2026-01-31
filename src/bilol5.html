@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа — Kuhnya.tjk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-[#F8F8F8] font-sans text-[#222222]">
+
+    <nav class="bg-white h-[80px] flex items-center border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-[1200px] mx-auto w-full px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-[#FF8A53] p-1.5 rounded-lg text-white">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <span class="text-xl font-bold text-[#FF8A53]">Kuhnya.tjk</span>
+            </div>
+            
+            <div class="hidden md:flex gap-6 font-medium text-gray-500 text-sm">
+                <a href="#" class="hover:text-[#FF8A53]">Главная</a>
+                <a href="#" class="hover:text-[#FF8A53]">Категории</a>
+                <a href="#" class="hover:text-[#FF8A53]">Список товаров</a>
+                <a href="#" class="hover:text-[#FF8A53]">О нас</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <i class="fas fa-search text-gray-400 cursor-pointer"></i>
+                <i class="fas fa-shopping-cart text-gray-700 cursor-pointer"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-[1200px] mx-auto px-6 py-12">
+        <h1 class="text-3xl font-black text-center mb-12">Оформление заказа</h1>
+
+        <div class="flex flex-col lg:flex-row gap-8 items-start">
+            
+            <div class="w-full lg:w-2/3 space-y-6">
+                
+                <div class="bg-white p-8 rounded-[30px] shadow-sm border border-gray-50">
+                    <h3 class="text-lg font-bold mb-6">Контактная информация</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="text-xs font-bold text-gray-400 ml-1">Имя</label>
+                            <input type="text" placeholder="Ваше имя" class="w-full bg-[#F9F9F9] border-none rounded-xl px-4 py-3 mt-1 outline-none focus:ring-2 focus:ring-orange-100">
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-gray-400 ml-1">Фамилия</label>
+                            <input type="text" placeholder="Ваша фамилия" class="w-full bg-[#F9F9F9] border-none rounded-xl px-4 py-3 mt-1 outline-none focus:ring-2 focus:ring-orange-100">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="text-xs font-bold text-gray-400 ml-1">Email</label>
+                        <input type="email" placeholder="Ваш email" class="w-full bg-[#F9F9F9] border-none rounded-xl px-4 py-3 mt-1 outline-none focus:ring-2 focus:ring-orange-100">
+                    </div>
+                    <div class="mb-4">
+                        <label class="text-xs font-bold text-gray-400 ml-1">Телефон</label>
+                        <input type="tel" placeholder="+992 XXX XX XX XX" class="w-full bg-[#F9F9F9] border-none rounded-xl px-4 py-3 mt-1 outline-none focus:ring-2 focus:ring-orange-100">
+                    </div>
+                    <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer">
+                        <input type="checkbox" class="accent-[#FF8A53]"> Сохранить информацию для будущих заказов
+                    </label>
+                </div>
+
+                <div class="bg-white p-8 rounded-[30px] shadow-sm border border-gray-50">
+                    <h3 class="text-lg font-bold mb-6">Адрес доставки</h3>
+                    <div class="mb-4">
+                        <label class="text-xs font-bold text-gray-400 ml-1">Город</label>
+                        <input type="text" value="Душанбе" class="w-full bg-[#F9F9F9] border-none rounded-xl px-4 py-3 mt-1 outline-none">
+                    </div>
+                    <div class="mb-4">
+                        <label class="text-xs font-bold text-gray-400 ml-1">Улица</label>
+                        <input type="text" placeholder="ул. Рудаки" class="w-full bg-[#F9F9F9] border-none rounded-xl px-4 py-3 mt-1 outline-none">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="text-xs font-bold text-gray-400 ml-1">Дом/Квартира</label>
+                            <input type="text" placeholder="10" class="w-full bg-[#F9F9F9] border-none rounded-xl px-4 py-3 mt-1 outline-none">
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-gray-400 ml-1">Почтовый индекс</label>
+                            <input type="text" placeholder="734001" class="w-full bg-[#F9F9F9] border-none rounded-xl px-4 py-3 mt-1 outline-none">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-[30px] shadow-sm border border-gray-50">
+                    <h3 class="text-lg font-bold mb-6">Способ доставки</h3>
+                    <div class="space-y-3">
+                        <label class="flex justify-between items-center p-4 bg-[#F9F9F9] rounded-2xl border-2 border-[#FF8A53] cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <input type="radio" name="delivery" checked class="accent-[#FF8A53]">
+                                <span class="text-sm font-medium">Стандартная доставка (3-5 дней)</span>
+                            </div>
+                            <span class="font-bold text-[#FF8A53]">20 сомони</span>
+                        </label>
+                        <label class="flex justify-between items-center p-4 bg-white border border-gray-100 rounded-2xl cursor-pointer hover:border-[#FF8A53] transition-all">
+                            <div class="flex items-center gap-3">
+                                <input type="radio" name="delivery" class="accent-[#FF8A53]">
+                                <span class="text-sm font-medium text-gray-500">Экспресс-доставка (1-2 дня)</span>
+                            </div>
+                            <span class="font-bold text-gray-400">50 сомони</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/3 sticky top-24">
+                <div class="bg-white p-8 rounded-[40px] shadow-sm border border-gray-50">
+                    <h3 class="text-xl font-bold mb-8">Ваш заказ</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex justify-between text-gray-400 text-sm">
+                            <span>Товары</span>
+                            <span class="font-bold text-gray-800">2 500 сомони</span>
+                        </div>
+                        <div class="flex justify-between text-gray-400 text-sm">
+                            <span>Доставка</span>
+                            <span class="font-bold text-gray-800">20 сомони</span>
+                        </div>
+                        <div class="border-t border-gray-50 pt-4 flex justify-between items-end">
+                            <span class="text-lg font-bold">Итого</span>
+                            <span class="text-2xl font-black text-[#FF8A53]">2 520 сомони</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-[#FF8A53] text-white py-4 rounded-[20px] font-bold text-lg hover:bg-[#e67a48] transition-all shadow-lg shadow-orange-100">
+                        Оплатить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#151515] text-white pt-16 pb-8 mt-20">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="bg-[#FF8A53] p-1.5 rounded text-white text-xs"><i class="fas fa-utensils"></i></div>
+                        <span class="text-lg font-bold">Kuhnya.tjk</span>
+                    </div>
+                    <p class="text-gray-500 text-xs leading-relaxed">Ваш надежный партнер в мире бытовой техники для кухни.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm mb-4">О нас</h4>
+                    <ul class="space-y-2 text-gray-500 text-xs">
+                        <li>Компания</li>
+                        <li>Миссия</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm mb-4">Помощь</h4>
+                    <ul class="space-y-2 text-gray-500 text-xs">
+                        <li>FAQ</li>
+                        <li>Доставка</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm mb-4">Контакты</h4>
+                    <p class="text-gray-500 text-xs">+992 123 456 789</p>
+                    <p class="text-gray-500 text-xs">info@kuhnya.tjk</p>
+                </div>
+            </div>
+            <p class="text-center text-gray-700 text-[10px] pt-8 border-t border-gray-800 uppercase tracking-widest">
+                © 2026 Kuhnya.tjk. Все права защищены.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
