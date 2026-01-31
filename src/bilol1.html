@@ -7,6 +7,207 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-    <p>1</p>
+    <nav class="bg-[#EDEDED] w-full h-[90px] flex items-center border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1440px] mx-auto w-full px-6 flex items-center justify-between relative">
+            <div class="flex items-center gap-4">
+                <input type="checkbox" id="nav-toggle" class="hidden">
+                <label for="nav-toggle" class="lg:hidden cursor-pointer text-[#FF8A5C] text-2xl"><i class="fas fa-bars"></i></label>
+                <div class="flex items-center gap-2">
+                    <div class="bg-[#FF8A5C] p-2 rounded-xl">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 3C7.58 3 4 4.79 4 7C4 9.21 7.58 11 12 11C16.42 11 20 9.21 20 7C20 4.79 16.42 3 12 3ZM4 9V17C4 19.21 7.58 21 12 21C16.42 21 20 19.21 20 17V9C20 11.21 16.42 13 12 13C7.58 13 4 11.21 4 9Z"/></svg>
+                    </div>
+                    <span class="text-2xl font-bold text-[#FF8A5C]">Kuhnya.tjk</span>
+                </div>
+                <div class="mobile-menu hidden absolute top-[90px] left-0 w-full bg-white shadow-2xl z-50 p-6">
+                    <ul class="space-y-4 font-bold">
+                        <li><a href="#" class="text-[#FF8A5C]">Главная</a></li>
+                         
+                            <li><a href="../src/bilol1.html">Категории</a></li>
+                        
+                       
+                        <li><a href="#">Список товаров</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2">
+                <ul class="flex space-x-10 font-semibold text-[#333333]">
+                    <li><a href="#" class="text-[#FF8A5C]">Главная</a></li>
+                    <li><a href="#" class="hover:text-[#FF8A5C]">Категории</a></li>
+                    <li><a href="#" class="hover:text-[#FF8A5C]">Список товаров</a></li>
+                    <li><a href="#" class="hover:text-[#FF8A5C]">О нас</a></li>
+                    <li><a href="#" class="hover:text-[#FF8A5C]">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="relative hidden md:block">
+                    <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="Искать товары..." class="w-[250px] h-[45px] bg-white rounded-xl pl-12 outline-none border border-gray-100">
+                </div>
+                <div class="w-8 h-8">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart" class="w-full h-full object-contain">
+                </div>
+            </div>
+        </div>
+    </nav>
+      
+
+    
+
+
+
+
+
+   
+  
+
+    <section class="max-w-[1200px] mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Категории товаров</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer">
+                <div class="h-[200px] bg-gray-50 flex items-center justify-center">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1-l3BpZH6WP9HcSoZFbbYFddM6s2bNzKTLKQejxe-WmaiNEdhVuQWJuZadLar" class="h-40 object-contain">
+                </div>
+                <div class="py-5 text-center font-bold text-gray-700 border-t border-gray-50">Микроволновки</div>
+            </div>
+
+            <div class="bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer">
+                <div class="h-[200px] bg-gray-50 flex items-center justify-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqYcNH5fmhPPtORS3ORqSO0_SzItJd0WUnZ66nx7IZCrSySjtFHEO1P7uplzV-" class="w-full h-full object-cover">
+                </div>
+                <div class="py-5 text-center font-bold text-gray-700 border-t border-gray-50">Холодильники</div>
+            </div>
+
+            <div class="bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer">
+                <div class="h-[200px] bg-gray-50 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80" class="w-full h-full object-cover">
+                </div>
+                <div class="py-5 text-center font-bold text-gray-700 border-t border-gray-50">Стиральные машины</div>
+            </div>
+
+            <div class="bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer">
+                <div class="h-[200px] bg-gray-50 flex items-center justify-center">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-mr9K9W2TO0iwmDdf_408H-7sEdxpAsm5e7hwXYwrZHyc2QVaHxlL3VSL9j6v" class="w-full h-full object-cover">
+                </div>
+                <div class="py-5 text-center font-bold text-gray-700 border-t border-gray-50">Мелкая техника</div>
+            </div>
+
+            <div class="bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer">
+                <div class="h-[200px] bg-gray-50 flex items-center justify-center p-4">
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfscQitbXhaYc2aqJCIzrd7oB0bxWs3WkLTbI_lDVNX3YVlCfjvxe7q_kAk4dH" class="w-full h-full object-cover">
+                </div>
+                <div class="py-5 text-center font-bold text-gray-700 border-t border-gray-50 text-sm">Плиты и варочные панели</div>
+            </div>
+            
+            <div class="bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer">
+                <div class="h-[200px] bg-gray-50 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1581622558663-b2e33377dfb2?q=80" class="w-full h-full object-cover">
+                </div>
+                <div class="py-5 text-center font-bold text-gray-700 border-t border-gray-50">Посудомоечные машины</div>
+            </div>
+
+            <div class="bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer">
+                <div class="h-[200px] bg-gray-50 flex items-center justify-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDPD_bhE4XcBYP5S31394dlmQgZXywEmdKdcjix5IepF_M3PdU5MmoDwl8ur9W" class="w-full h-full object-cover">
+                </div>
+                <div class="py-5 text-center font-bold text-gray-700 border-t border-gray-50">Духовые шкафы</div>
+            </div>
+
+            <div class="bg-white rounded-[20px] overflow-hidden shadow-sm hover:shadow-md transition cursor-pointer">
+                <div class="h-[200px] bg-gray-50 flex items-center justify-center">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFXfNugi5PikofuOOBW9Qw_zjJ41Os-pNpob0QVcFSduRwpyciZGDhLdMK7nWF" class="w-full h-full object-cover">
+                </div>
+                <div class="py-5 text-center font-bold text-gray-700 border-t border-gray-50">Вытяжки</div>
+            </div>
+        </div>
+
+              
+            
+    </section>
+
+    <section class="max-w-[1440px] mx-auto px-6 py-20">
+        <div class="bg-white rounded-[40px] p-12 text-center border border-gray-50 shadow-sm">
+            <h2 class="text-4xl font-black mb-4 text-[#333333]">Подпишитесь на новости и акции</h2>
+            <p class="text-gray-500 mb-10 text-lg">Получайте эксклюзивные предложения и будьте в курсе всех новинок.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+                <input type="email" placeholder="Ваш Email" class="bg-[#F9F9F9] border border-gray-100 rounded-2xl px-8 py-5 flex-grow outline-none focus:ring-2 focus:ring-orange-100 text-lg transition-all">
+                <button class="bg-[#FF8A53] text-white px-12 py-5 rounded-2xl font-bold text-lg hover:bg-[#e67a48] transition-all shadow-lg shadow-orange-100">
+                    Подписаться
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#151515] text-white pt-20 pb-10">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="bg-[#FF8A53] p-2 rounded-lg text-white"><i class="fas fa-utensils"></i></div>
+                        <span class="text-2xl font-bold uppercase tracking-tight">Kuhnya.tjk</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-8 leading-relaxed">Kuhnya.tjk — ваш надежный партнер в мире бытовой техники для кухни.</p>
+                    <div class="flex gap-6 text-xl text-gray-400">
+                        <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-6">О нас</h4>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-[#FF8A53]">Компания</a></li>
+                        <li><a href="#" class="hover:text-[#FF8A53]">Наша миссия</a></li>
+                        <li><a href="#" class="hover:text-[#FF8A53]">Команда</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Помощь</h4>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-[#FF8A53]">FAQ</a></li>
+                        <li><a href="#" class="hover:text-[#FF8A53]">Доставка</a></li>
+                        <li><a href="#" class="hover:text-[#FF8A53]">Возврат</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Категории</h4>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-[#FF8A53]">Микроволновки</a></li>
+                        <li><a href="#" class="hover:text-[#FF8A53]">Холодильники</a></li>
+                        <li><a href="#" class="hover:text-[#FF8A53]">Стиральные машины</a></li>
+                        <li><a href="#" class="hover:text-[#FF8A53]">Мелкая техника</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-10 mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex items-center gap-3 text-gray-400">
+                    <i class="fas fa-phone text-[#FF8A53]"></i> <span>+992 123 456 789</span>
+                </div>
+                <div class="flex items-center gap-3 text-gray-400">
+                    <i class="fas fa-envelope text-[#FF8A53]"></i> <span>info@kuhnya.tjk.com</span>
+                </div>
+                <div class="flex items-center gap-3 text-gray-400">
+                    <i class="fas fa-map-marker-alt text-[#FF8A53]"></i> <span>г. Душанбе, ул. Рудаки, 100</span>
+                </div>
+            </div>
+
+            <p class="text-center text-gray-600 text-sm mt-12 border-t border-gray-800 pt-8">
+                © 2026 Kuhnya.tjk. Все права защищены.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+    
 </body>
 </html>
