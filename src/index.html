@@ -7,6 +7,433 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-    
+  
+    <nav class="bg-[#EDEDED] w-full h-[90px] flex items-center border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-[1440px] mx-auto w-full px-6 flex items-center justify-between relative">
+            <div class="flex items-center gap-4">
+                <input type="checkbox" id="nav-toggle" class="hidden">
+                <label for="nav-toggle" class="lg:hidden cursor-pointer text-[#FF8A5C] text-2xl"><i class="fas fa-bars"></i></label>
+                <div class="flex items-center gap-2">
+                    <div class="bg-[#FF8A5C] p-2 rounded-xl">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 3C7.58 3 4 4.79 4 7C4 9.21 7.58 11 12 11C16.42 11 20 9.21 20 7C20 4.79 16.42 3 12 3ZM4 9V17C4 19.21 7.58 21 12 21C16.42 21 20 19.21 20 17V9C20 11.21 16.42 13 12 13C7.58 13 4 11.21 4 9Z"/></svg>
+                    </div>
+                    <span class="text-2xl font-bold text-[#FF8A5C]">Kuhnya.tjk</span>
+                </div>
+                <div class="mobile-menu hidden absolute top-[90px] left-0 w-full bg-white shadow-2xl z-50 p-6">
+                    <ul class="space-y-4 font-bold">
+                        <li><a href="#" class="text-[#FF8A5C]">Главная</a></li>
+                         
+                            <li><a href="../src/bilol1.html">Категории</a></li>
+                        
+                       
+                        <li><a href="#">Список товаров</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2">
+                <ul class="flex space-x-10 font-semibold text-[#333333]">
+                    <li><a href="#" class="text-[#FF8A5C]">Главная</a></li>
+                    <li><a href="#" class="hover:text-[#FF8A5C]">Категории</a></li>
+                    <li><a href="#" class="hover:text-[#FF8A5C]">Список товаров</a></li>
+                    <li><a href="#" class="hover:text-[#FF8A5C]">О нас</a></li>
+                    <li><a href="#" class="hover:text-[#FF8A5C]">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="relative hidden md:block">
+                    <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" placeholder="Искать товары..." class="w-[250px] h-[45px] bg-white rounded-xl pl-12 outline-none border border-gray-100">
+                </div>
+                <div class="w-8 h-8">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart" class="w-full h-full object-contain">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="max-w-[1440px] mx-auto px-6 py-10">
+        <div class="bg-white rounded-[40px] p-10 md:p-20 flex flex-col lg:flex-row items-center justify-between border border-gray-50">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-4xl md:text-6xl font-black text-[#222222] leading-tight mb-6">Лучшие бытовые приборы для вашей кухни</h1>
+                <p class="text-gray-400 text-xl mb-10">Скидки до 30% на популярные товары</p>
+                <button class="bg-[#FF8A5C] text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-[#e67e52] transition shadow-lg shadow-orange-100">Перейти в каталог</button>
+            </div>
+            <div class="lg:w-1/2 mt-10 lg:mt-0">
+                <img src="./imagebilol/Selection (4).png" class="rounded-[30px] shadow-xl w-full object-cover" alt="Kitchen">
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-[1440px] mx-auto px-6 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-[#222222] mb-12">Популярные товары</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            
+            <div class="bg-white p-4 rounded-[25px] shadow-sm hover:shadow-md transition border border-gray-50 flex flex-col">
+                <div class="h-48 rounded-2xl overflow-hidden mb-4 bg-gray-50">
+                    <img src="./imagebilol/Selection.jpg" class="w-full h-full object-contain p-2" alt="Микроволновка">
+                </div>
+                <h3 class="font-bold text-[#333333] mb-2 truncate">Микроволновка Sar</h3>
+                <p class="text-[#FF8A5C] font-bold text-lg mb-4">12 990 P</p>
+                <button class="w-full bg-[#FF8A5C] text-white py-3 rounded-xl font-bold mt-auto hover:bg-[#e67e52] transition">В корзину</button>
+            </div>
+
+            <div class="bg-white p-4 rounded-[25px] shadow-sm hover:shadow-md transition border border-gray-50 flex flex-col">
+                <div class="h-48 rounded-2xl overflow-hidden mb-4 bg-gray-50">
+                    <img src="./imagebilol/Selection (1).jpg" class="w-full h-full object-contain p-2" alt="Холодильник">
+                </div>
+                <h3 class="font-bold text-[#333333] mb-2 truncate">Холодильник LG</h3>
+                <p class="text-[#FF8A5C] font-bold text-lg mb-4">35 490 P</p>
+                <button class="w-full bg-[#FF8A5C] text-white py-3 rounded-xl font-bold mt-auto hover:bg-[#e67e52] transition">В корзину</button>
+            </div>
+
+            <div class="bg-white p-4 rounded-[25px] shadow-sm hover:shadow-md transition border border-gray-50 flex flex-col">
+                <div class="h-48 rounded-2xl overflow-hidden mb-4 bg-gray-50">
+                    <img src="./imagebilol/Selection (2).jpg" class="w-full h-full object-contain p-2" alt="Стиралка">
+                </div>
+                <h3 class="font-bold text-[#333333] mb-2 truncate">Стиральная машина</h3>
+                <p class="text-[#FF8A5C] font-bold text-lg mb-4">28 990 P</p>
+                <button class="w-full bg-[#FF8A5C] text-white py-3 rounded-xl font-bold mt-auto hover:bg-[#e67e52] transition">В корзину</button>
+            </div>
+
+            <div class="bg-white p-4 rounded-[25px] shadow-sm hover:shadow-md transition border border-gray-50 flex flex-col">
+                <div class="h-48 rounded-2xl overflow-hidden mb-4 bg-gray-50">
+                    <img src="./imagebilol/Selection (3).jpg" class="w-full h-full object-contain p-2" alt="Блендер">
+                </div>
+                <h3 class="font-bold text-[#333333] mb-2 truncate">Блендер Philips</h3>
+                <p class="text-[#FF8A5C] font-bold text-lg mb-4">4 750 P</p>
+                <button class="w-full bg-[#FF8A5C] text-white py-3 rounded-xl font-bold mt-auto hover:bg-[#e67e52] transition">В корзину</button>
+            </div>
+
+            <div class="bg-white p-4 rounded-[25px] shadow-sm hover:shadow-md transition border border-gray-50 flex flex-col">
+                <div class="h-48 rounded-2xl overflow-hidden mb-4 bg-gray-50">
+                    <img src="./imagebilol/Selection (4).jpg" class="w-full h-full object-contain p-2" alt="Кофемашина">
+                </div>
+                <h3 class="font-bold text-[#333333] mb-2 truncate">Кофемашина DeLon</h3>
+                <p class="text-[#FF8A5C] font-bold text-lg mb-4">18 200 P</p>
+                <button class="w-full bg-[#FF8A5C] text-white py-3 rounded-xl font-bold mt-auto hover:bg-[#e67e52] transition">В корзину</button>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="max-w-[1440px] mx-auto px-6 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-[#222222] mb-12">Популярные категории</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <a href="#" class="group relative h-[220px] rounded-[25px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2JDk5PySTNiYJj1BRN2ZlwOdF_nCQQh0cT6PFLnoVIQLviqWJeZ-TjHEy2NFB" 
+                     class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Микроволновки">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6 group-hover:bg-black/20 transition-all">
+                    <span class="text-white text-xl font-bold">Микроволновки</span>
+                </div>
+            </a>
+
+            <a href="#" class="group relative h-[220px] rounded-[25px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR37LufHrduegWb4Aqbw6oeAYChCo9-KxDkjtZ9Y6u5O1kVTnyEvVBICx6AE_0r" 
+                     class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Холодильники">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6 group-hover:bg-black/20 transition-all">
+                    <span class="text-white text-xl font-bold">Холодильники</span>
+                </div>
+            </a>
+
+            <a href="#" class="group relative h-[220px] rounded-[25px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                <img src="https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?q=80&w=800" 
+                     class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Стиральные машины">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6 group-hover:bg-black/20 transition-all">
+                    <span class="text-white text-xl font-bold">Стиральные машины</span>
+                </div>
+            </a>
+
+            <a href="#" class="group relative h-[220px] rounded-[25px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+                <img src="https://images.unsplash.com/photo-1570222094114-d054a817e56b?q=80&w=800" 
+                     class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Мелкая техника">
+                <div class="absolute inset-0 bg-black/40 flex items-end p-6 group-hover:bg-black/20 transition-all">
+                    <span class="text-white text-xl font-bold">Мелкая техника</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="max-w-[1440px] mx-auto px-6 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-[#222222] mb-12">Новые поступления</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <div class="bg-white p-5 rounded-[30px] shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-50 flex flex-col">
+                <div class="h-56 rounded-[20px] overflow-hidden mb-5 bg-[#F9F9F9] flex items-center justify-center">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7PBo1BdLiBIrp9xUPF9F4G7OdwrE3UW59G4nSHaT4MN1fBIaxbvaPxUUknyWb" class="w-full h-full object-contain p-4" alt="Электрочайник">
+                </div>
+                <h3 class="font-bold text-xl text-[#333333] mb-2 px-2">Электрочайник Redmond</h3>
+                <p class="text-[#FF8A5C] font-extrabold text-2xl mb-6 px-2">3 500 ₽</p>
+                <button class="w-full bg-[#FF8A5C] text-white py-4 rounded-2xl font-bold text-lg hover:bg-[#e67e52] transition-colors shadow-lg shadow-orange-50">
+                    В корзину
+                </button>
+            </div>
+
+            <div class="bg-white p-5 rounded-[30px] shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-50 flex flex-col">
+                <div class="h-56 rounded-[20px] overflow-hidden mb-5 bg-[#F9F9F9] flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1544233726-9f1d2b27be8b?q=80&w=500" class="w-full h-full object-contain p-4" alt="Мультиварка">
+                </div>
+                <h3 class="font-bold text-xl text-[#333333] mb-2 px-2">Мультиварка Polaris</h3>
+                <p class="text-[#FF8A5C] font-extrabold text-2xl mb-6 px-2">6 100 ₽</p>
+                <button class="w-full bg-[#FF8A5C] text-white py-4 rounded-2xl font-bold text-lg hover:bg-[#e67e52] transition-colors shadow-lg shadow-orange-50">
+                    В корзину
+                </button>
+            </div>
+
+            <div class="bg-white p-5 rounded-[30px] shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-50 flex flex-col">
+                <div class="h-56 rounded-[20px] overflow-hidden mb-5 bg-[#F9F9F9] flex items-center justify-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQ9Xfs83m9LAn69URUO8G9DIDgIU_zb6Tbf31KmtqW05nBAnZzM7kAtSi9f8D" class="w-full h-full object-contain p-4" alt="Тостер">
+                </div>
+                <h3 class="font-bold text-xl text-[#333333] mb-2 px-2">Тостер Braun</h3>
+                <p class="text-[#FF8A5C] font-extrabold text-2xl mb-6 px-2">2 890 ₽</p>
+                <button class="w-full bg-[#FF8A5C] text-white py-4 rounded-2xl font-bold text-lg hover:bg-[#e67e52] transition-colors shadow-lg shadow-orange-50">
+                    В корзину
+                </button>
+            </div>
+
+            <div class="bg-white p-5 rounded-[30px] shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-50 flex flex-col">
+                <div class="h-56 rounded-[20px] overflow-hidden mb-5 bg-[#F9F9F9] flex items-center justify-center">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_Cx8Krw9wIiPbNVJoQFbkex_gRGIR--YjuPII5FKgGUZM0DaCzlCXgQqkLMbh" class="w-full h-full object-cover" alt="Соковыжималка">
+                </div>
+                <h3 class="font-bold text-xl text-[#333333] mb-2 px-2">Соковыжималка Kitfort</h3>
+                <p class="text-[#FF8A5C] font-extrabold text-2xl mb-6 px-2">7 990 ₽</p>
+                <button class="w-full bg-[#FF8A5C] text-white py-4 rounded-2xl font-bold text-lg hover:bg-[#e67e52] transition-colors shadow-lg shadow-orange-50">
+                    В корзину
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+   <section class="max-w-[1440px] mx-auto px-6 py-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-[#222222] mb-12">Лучшие предложения</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white rounded-[30px] overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-50 flex flex-col">
+                <div class="relative h-64 bg-[#F9F9F9]">
+                    <span class="absolute top-4 left-4 bg-[#FF8A5C]/20 text-[#FF8A5C] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Суперцена!
+                    </span>
+                    <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcaAgexLgCGNMR0oMQkREGp-AjgMo19eDXToydLPbOASPKyZuXHdXTA2sRme4S" class="w-full h-full object-contain p-6" alt="Посудомоечная машина">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-xl text-[#333333] mb-3">Посудомоечная машина Beko</h3>
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-[#FF8A5C] font-black text-2xl">24 990 ₽</span>
+                        <span class="text-gray-400 line-through text-sm font-medium">29 990 ₽</span>
+                    </div>
+                    <button class="w-full bg-[#FF8A5C] text-white py-4 rounded-2xl font-bold text-lg hover:bg-[#e67e52] transition-colors mt-auto">
+                        Купить сейчас
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[30px] overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 flex flex-col">
+                <div class="relative h-64 bg-[#F9F9F9]">
+                    <span class="absolute top-4 left-4 bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Только сегодня
+                    </span>
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1q2_boiQDRdWNhgTTWEEkdmCVLC2ctghLu1KE6tzKTq_zrHmO0CpSacAqVge9" class="w-full h-full object-contain p-6" alt="Кухонный комбайн">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-xl text-[#333333] mb-3">Кухонный комбайн Kenwood</h3>
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-[#FF8A5C] font-black text-2xl">15 900 ₽</span>
+                        <span class="text-gray-400 line-through text-sm font-medium">19 900 ₽</span>
+                    </div>
+                    <button class="w-full bg-[#FF8A5C] text-white py-4 rounded-2xl font-bold text-lg hover:bg-[#e67e52] transition-colors mt-auto">
+                        Купить сейчас
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[30px] overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-50 flex flex-col">
+                <div class="relative h-64 bg-[#F9F9F9]">
+                    <span class="absolute top-4 left-4 bg-[#FF8A5C]/20 text-[#FF8A5C] px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                        Суперцена!
+                    </span>
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToHbDYlzltTjOFdMUHtg9sSxdGvWGEoSh_8Rxou4hvhC5tTfN9LyXyBfriVN5R" class="w-full h-full object-contain p-6" alt="Робот-пылесос">
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-xl text-[#333333] mb-3">Робот-пылесос Xiaomi</h3>
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="text-[#FF8A5C] font-black text-2xl">19 500 ₽</span>
+                        <span class="text-gray-400 line-through text-sm font-medium">22 000 ₽</span>
+                    </div>
+                    <button class="w-full bg-[#FF8A5C] text-white py-4 rounded-2xl font-bold text-lg hover:bg-[#e67e52] transition-colors mt-auto">
+                        Купить сейчас
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="max-w-[1440px] mx-auto px-6 py-16">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-center text-[#222222] mb-12">Почему выбирают нас?</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="bg-white p-10 rounded-[30px] shadow-sm border border-gray-50 flex flex-col items-center text-center group hover:shadow-md transition-all">
+                <div class="text-[#FF8A5C] text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-truck-fast"></i>
+                </div>
+                <h3 class="font-bold text-xl text-[#333333] mb-4">Быстрая доставка</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Доставляем ваши заказы в кратчайшие сроки по всей стране.
+                </p>
+            </div>
+
+            <div class="bg-white p-10 rounded-[30px] shadow-sm border border-gray-50 flex flex-col items-center text-center group hover:shadow-md transition-all">
+                <div class="text-[#FF8A5C] text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3 class="font-bold text-xl text-[#333333] mb-4">Гарантия качества</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Только сертифицированные товары от проверенных производителей.
+                </p>
+            </div>
+
+            <div class="bg-white p-10 rounded-[30px] shadow-sm border border-gray-50 flex flex-col items-center text-center group hover:shadow-md transition-all">
+                <div class="text-[#FF8A5C] text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <h3 class="font-bold text-xl text-[#333333] mb-4">Лучшие цены</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Предлагаем конкурентные цены и регулярные акции для наших клиентов.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="max-w-[1440px] mx-auto px-6 py-16 bg-white/50">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-5xl font-black text-[#222222] mb-4">Что говорят наши клиенты</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Мы ценим каждого клиента и гордимся вашим доверием. Вот несколько историй от тех, кто уже обновил свою кухню с нами.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white p-8 rounded-[40px] shadow-sm border border-gray-50 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                <div class="w-24 h-24 rounded-full overflow-hidden mb-6 border-4 border-[#FF8A5C]/10">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200" alt="Азиза" class="w-full h-full object-cover">
+                </div>
+                <h3 class="font-bold text-xl text-[#333333] mb-1">Азиза Абдуллоева</h3>
+                <span class="text-[#FF8A5C] text-sm font-medium mb-4 block">@aziza_kitchen</span>
+                <div class="flex gap-1 mb-4 text-[#FF8A5C]">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-500 italic leading-relaxed">
+                    «Заказывала микроволновку и чайник. Доставили очень быстро! Качество товара на высшем уровне, теперь готовить одно удовольствие.»
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-[40px] shadow-sm border border-gray-50 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                <div class="w-24 h-24 rounded-full overflow-hidden mb-6 border-4 border-[#FF8A5C]/10">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200" alt="Фарход" class="w-full h-full object-cover">
+                </div>
+                <h3 class="font-bold text-xl text-[#333333] mb-1">Фарход Каримов</h3>
+                <span class="text-[#FF8A5C] text-sm font-medium mb-4 block">@farhod_k</span>
+                <div class="flex gap-1 mb-4 text-[#FF8A5C]">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                </div>
+                <p class="text-gray-500 italic leading-relaxed">
+                    «Отличный магазин! Приятно удивили цены и большой выбор. Менеджер помог определиться с моделью холодильника. Рекомендую всем.»
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-[40px] shadow-sm border border-gray-50 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                <div class="w-24 h-24 rounded-full overflow-hidden mb-6 border-4 border-[#FF8A5C]/10">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200" alt="Сабина" class="w-full h-full object-cover">
+                </div>
+                <h3 class="font-bold text-xl text-[#333333] mb-1">Сабина Рахимова</h3>
+                <span class="text-[#FF8A5C] text-sm font-medium mb-4 block">@sabina_r</span>
+                <div class="flex gap-1 mb-4 text-[#FF8A5C]">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-500 italic leading-relaxed">
+                    «Прекрасный сервис! Стиральная машина работает тихо, как и обещали. Очень довольна покупкой и быстрым оформлением заказа.»
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="max-w-[1440px] mx-auto px-6 py-20">
+        <div class="bg-white rounded-[40px] p-10 md:p-20 text-center shadow-sm border border-gray-50">
+            <h2 class="text-3xl md:text-5xl font-black text-[#222222] mb-6">Подпишитесь на новости и акции</h2>
+            <p class="text-gray-400 text-lg mb-10">Получайте эксклюзивные предложения и будьте в курсе всех новинок.</p>
+            
+            <form action="#" class="flex flex-col md:flex-row gap-4 justify-center max-w-2xl mx-auto">
+                <input type="email" placeholder="Ваш Email" 
+                    class="flex-grow h-[60px] bg-[#F9F9F9] border border-gray-100 rounded-2xl px-6 outline-none focus:ring-2 focus:ring-[#FF8A5C]/20 transition-all">
+                <button type="submit" 
+                    class="h-[60px] px-10 bg-[#FF8A5C] text-white font-bold rounded-2xl hover:bg-[#e67e52] transition-colors shadow-lg shadow-orange-100">
+                    Подписаться
+                </button>
+            </form>
+        </div>
+    </section>
+
+<footer class="bg-[#1A1A1A] text-white pt-16 pb-8">
+        <div class="max-w-[1440px] mx-auto px-4 md:px-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-2 mb-6 text-[#FF8A53]">
+                        <i class="fas fa-utensils text-2xl"></i>
+                        <span class="text-2xl font-bold">Kuhnya.tjk</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Ваш надежный партнер в мире бытовой техники для кухни.</p>
+                    <div class="flex gap-4 mt-6 text-xl">
+                        <i class="fab fa-facebook hover:text-[#FF8A53] cursor-pointer"></i>
+                        <i class="fab fa-instagram hover:text-[#FF8A53] cursor-pointer"></i>
+                        <i class="fab fa-telegram hover:text-[#FF8A53] cursor-pointer"></i>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">О нас</h4>
+                    <ul class="text-gray-400 space-y-3 text-sm">
+                        <li class="hover:text-white cursor-pointer transition">Компания</li>
+                        <li class="hover:text-white cursor-pointer transition">Миссия</li>
+                        <li class="hover:text-white cursor-pointer transition">Команда</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Помощь</h4>
+                    <ul class="text-gray-400 space-y-3 text-sm">
+                        <li class="hover:text-white cursor-pointer transition">Доставка</li>
+                        <li class="hover:text-white cursor-pointer transition">Возврат</li>
+                        <li class="hover:text-white cursor-pointer transition">FAQ</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6">Контакты</h4>
+                    <ul class="text-gray-400 space-y-3 text-sm">
+                        <li><i class="fas fa-phone mr-2"></i> +992 123 456 789</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@kuhnya.tjk.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> г. Душанбе, ул. Рудаки, 100</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                © 2026 Kuhnya.tjk. Все права защищены.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
